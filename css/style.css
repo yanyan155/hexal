@@ -38,9 +38,10 @@ h1 {
   position: absolute;
   top: -9999px;
 }
-/*.container{
-  max-width: 1200px;
-}*/
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+}
 header {
     background-color: #323232;
     min-height: 63px;
@@ -54,17 +55,12 @@ header::before {
   border-width: 26px 45px 0 45px;
   border-color: #323232 transparent transparent transparent;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top:63px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/*nav {
-  width: 50%;
-  margin-top:30px;
-  margin-bottom:20px;
-}*/
 nav ul {
   display: flex;
   flex-direction: row;
@@ -97,6 +93,7 @@ nav a {
   cursor: pointer;
   display: inline-block;
   padding: 10px;
+  letter-spacing: -0.02em;
 }
 nav a:hover {
   color: #00B598;
@@ -107,11 +104,157 @@ nav a:hover {
   background-image: url(../assets/img/arrow.png);
   position: relative;
   padding: 0;
-  /*eft: 1px;*/
+  left: -1px;
   top: 2px;
-  margin: 0 20px 0 26px;
+  margin: 0 20px 0 28px;
 }
 .arrow::before {
   display: none;
+}
+.slide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 77px;
+  margin-bottom: 54px;
+}
+.hr{
+  height: 1px;
+  background: #E3EAEC;
+  margin: 11px 9px 10px;
+  max-width: 980px;
+  position: relative;
+}
+.hr:after {
+  content: '';
+  height: 1px;
+  background: #fff;
+  width: 140px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hexagon{
+  height: 210px;
+  width: 180px;
+  overflow: hidden;
+  -webkit-transform: rotate(60deg);
+}
+.hex-wrap {
+  position: relative;
+  margin: 0 10px;
+}
+.hex-wrap:nth-child(9n+5) {
+  margin-left: 0;
+}
+.hex-wrap:nth-child(9n+9) {
+  margin-right: 0;
+}
+.hex-wrap:nth-child(n+5) {
+  margin-top: -42px;
+}
+.hex-layer1{
+  height: 210px;
+  width: 180px;
+  -webkit-transform: rotate(-120deg);
+  overflow: hidden;
+
+}
+.hex-layer2{
+  height: 210px;
+  width: 180px;
+  -webkit-transform: rotate(60deg);
+  overflow: hidden;
+  background-image: url(../assets/img/work-1.png);
+  background-position: 50% 67%;
+  position: relative;
+}
+.slider-pagination {
+  margin-left: 10px;
+}
+.slider-pagination li{
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right:1px;
+  background-color: #E2D3C6;
+}
+.slider-pagination li:last-child{
+  margin-right:0px;
+}
+.slider-pagination .active{
+  background-color: #8E8885;
+  background-color: #E2D3C6;
+}
+.no-dash {
+  margin: 8px 12px 10px;
+}
+.no-dash:after {
+  display: none;
+}
+.hex-wrap:nth-child(9n+1):after,
+.hex-wrap:nth-child(9n+4):after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 105px;
+  background-color: #E3EAEC;
+  top: 53px;
+}
+.hex-wrap:nth-child(9n+1):after{
+  left: -20px;
+}
+.hex-wrap:nth-child(9n+4):after{
+  right: -20px;
+}
+.hex-wrap:nth-child(1) .hex-layer2{
+  background-image: url(../assets/img/work-6.png);
+  background-position: 54% 76%;
+}
+.hex-wrap:nth-child(2) .hex-layer2{
+  background-image: url(../assets/img/work-5.png);
+  background-position: 50% 67%;
+}
+.hex-wrap:nth-child(3) .hex-layer2{
+  background-image: url(../assets/img/work-8.png);
+}
+.hex-wrap:nth-child(4) .hex-layer2{
+  background-image: url(../assets/img/work-7.png);
+  background-position: 50% 150%;
+}
+.hex-wrap:nth-child(5) .hex-layer2{
+  background-image: url(../assets/img/work-12.png);
+  background-position: 50% 96%;
+}
+.hex-wrap:nth-child(6) .hex-layer2{
+  background-image: url(../assets/img/work-11.png);
+  background-position: 50% 102%;
+}
+.hex-wrap:nth-child(7) .hex-layer2{
+  background-image: url(../assets/img/work-13.png);
+}
+.hex-wrap:nth-child(8) .hex-layer2{
+  background-image: url(../assets/img/work-10.png);
+  background-position: 47% 59%;
+}
+.hex-wrap:nth-child(9) .hex-layer2{
+  background-image: url(../assets/img/work-9.png);
+}
+.hex-wrap:nth-child(10) .hex-layer2{
+  background-image: url(../assets/img/work-2.png);
+}
+.hex-wrap:nth-child(11) .hex-layer2{
+  background-image: url(../assets/img/work-1.png);
+}
+.hex-wrap:nth-child(12) .hex-layer2{
+  background-image: url(../assets/img/work-4.png);
+  background-position: 50% 50%;
+}
+.hex-wrap:nth-child(13) .hex-layer2{
+  background-image: url(../assets/img/work-3.png);
+  background-position: 25% 44%;
 }
 
