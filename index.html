@@ -23,8 +23,8 @@
 			</div>
 		</header>
 		<main>
-			<h1>Hexal - is my personal picture gallery.</h1>
 			<section class="portfolio">
+				<h1>Hexal - is my personal picture gallery.</h1>
 				<div class="container">
 					<div class="hr"></div>
 					<div class="slide">
@@ -146,26 +146,28 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
 
 						<ul class="sotials">
-							<li><a class="fab fa-facebook-f" href="#" title="link to facebook"></a></li>
-							<li><a class="fab fa-twitter" href="#" title="link to twitter"></a></li>
-							<li><a class="fab fa-google-plus-g" href="#" title="link to google plus"></a></li>
-							<li><a class="fab fa-pinterest-p" href="#" title="link to pinterest"></a></li>
-							<li><a class="fab fa-linkedin-in" href="#" title="link to linkedin"></a></li>
-							<li><a class="fab fa-dribbble" href="#" title="link to dribble"></a></li>
+							<li><a class="fab fa-facebook-f" href="https://www.facebook.com/" title="link to facebook"></a></li>
+							<li><a class="fab fa-twitter" href="https://twitter.com/?lang=en" title="link to twitter"></a></li>
+							<li><a class="fab fa-google-plus-g" href="https://plus.google.com/discover" title="link to google plus"></a></li>
+							<li><a class="fab fa-pinterest-p" href="https://www.pinterest.com/" title="link to pinterest"></a></li>
+							<li><a class="fab fa-linkedin-in" href="https://www.linkedin.com/" title="link to linkedin"></a></li>
+							<li><a class="fab fa-dribbble" href="https://dribbble.com/" title="link to dribble"></a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
+		</main>
+		<footer>
 			<section class="get-in-touch">
 				<div class="container">
 					<form action="#" method="#" class="feedback-form">
 						<fieldset>
 							<legend>Get In Touch</legend>
 							<h3>In order to get in touch use the contact form below:</h3>
-							<input type="text" placeholder="Name (Required)" required>
-							<input type="email" placeholder="Email (Required)" required>
-							<input type="text" placeholder="Subject">
-							<textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
+							<input name="user-name" type="text" placeholder="Name (Required)" minlength="2" maxlength="25" pattern="[a-zA-Z ]+" required>
+							<input name="email" type="email" placeholder="Email (Required)" minlength="3" maxlength="30" required>
+							<input name="subject" type="text" placeholder="Subject">
+							<textarea name="feedback-message" cols="30" rows="10" minlength="5" maxlength="300" placeholder="Write your message here..." required></textarea>
 							<div class="button-wrap">
 								<button type="submit">send</button>
 							</div>
@@ -173,14 +175,26 @@
 					</form>
 					<div class="contact-wrap">
 						<p class="contact-description"><span>Quisque Hendrerit:</span> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
-						<p class="contacts"><i class="fas fa-map-marker-alt"></i> <a href="#">Elm St. 14/05 Lost City</a></p>
-						<p class="contacts"><i class="fas fa-phone"></i> <a href="tel:+35283318635">+ 3528 331 86 35</a></p>
-						<p class="contacts"><i class="fas fa-envelope"></i> <a href="mailto:info@hexalcorp.com">info@hexalcorp.com</a></p>
+						<p class="contacts">
+							<a href="#" class="fas fa-map-marker-alt" title="link to office location"></a> 
+							<a href="#" title="link to office location">Elm St. 14/05 Lost City</a>
+						</p>
+						<p class="contacts">
+							<a href="tel:+35283318635" class="fas fa-phone" title="link to phone"></a> 
+							<a href="tel:+35283318635" title="link to phone">+ 3528 331 86 35</a>
+						</p>
+						<p class="contacts">
+							<a href="mailto:info@hexalcorp.com" class="fas fa-envelope" title="link to mail"></a> 
+							<a href="mailto:info@hexalcorp.com" title="link to mail">info@hexalcorp.com</a>
+						</p>
 					</div>
 				</div>
 			</section>
-		</main>
-		<footer>
+			<section class="copyright">
+				<div class="container">
+					<p>&copy; Copyright 2013 by PSDchat</p>
+				</div>
+			</section>
 		</footer>
  	</body>
 </html>

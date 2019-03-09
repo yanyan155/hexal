@@ -81,6 +81,7 @@ nav li {
   padding: 6px 3px 3px;
   position: relative;
 }
+
 nav li::before {
   content: '';
   width: 2px;
@@ -89,6 +90,12 @@ nav li::before {
   bottom: 19px;
   right: 0;
   background-color: #434B60;
+}
+nav li:nth-child(1) {
+  margin-left: 2px;
+}
+nav li:nth-child(4) {
+  margin-left: 2px;
 }
 nav li:nth-child(2):before,
 nav li:last-child:before {
@@ -308,8 +315,8 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 34px;
-  margin-bottom: 5px;
+  margin-top: 36px;
+  margin-bottom: 6px;
 }
 .sotials li{
   background-color: #89DCD5;
@@ -326,6 +333,9 @@ nav a:hover {
 .sotials li:hover {
   background-color: #00CCBF;
 }
+.sotials a:hover {
+  color: #89DCD5;
+}
 .sotials a{
   font-size:1.3rem;  
   color: #00AE95;
@@ -333,9 +343,12 @@ nav a:hover {
   cursor: pointer;
 }
 .sotials a.fa-facebook-f{
-  padding-left: 9px;
+  padding-left: 8px;
 }
 .sotials a.pinterest-p{
+  padding-left: 7px;
+}
+.sotials a.fa-pinterest-p{
   padding-left: 7px;
 }
 .sotials a.fa-linkedin-in{
@@ -343,6 +356,7 @@ nav a:hover {
 }
 .get-in-touch {
   background-color: #2E2E2E;
+  min-height: 565px;
 }
 .get-in-touch .container {
   max-width: 820px;
@@ -354,6 +368,7 @@ nav a:hover {
   max-width: 580px;
   padding-top: 59px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .feedback-form fieldset{
   display: flex;
@@ -362,10 +377,11 @@ nav a:hover {
 .feedback-form legend{
   font: 3rem 'Maven Pro Regular', sans-serif;
   color: #E1E1E1;
+  margin-bottom: -1px;
 }
 .feedback-form h3 {
   color: #E1E1E1;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .feedback-form input,
 .feedback-form textarea{
@@ -377,6 +393,12 @@ nav a:hover {
   padding: 10px 15px;
   color: #E1E1E1;
   letter-spacing: -0.02em;
+  cursor: pointer;
+}
+.feedback-form input:hover,
+.feedback-form textarea:hover{
+
+  outline: 2px solid #00B598;
 }
 .feedback-form input {
   height:38px;
@@ -386,6 +408,7 @@ nav a:hover {
   resize: none;
   height:148px;
   margin-bottom: 18px;
+  padding: 12px 14px;
 }
 ::-webkit-input-placeholder {
   font:1.2rem 'Lato Regular';
@@ -422,6 +445,7 @@ button[type="submit"] {
   max-width: 180px;
   margin-top: 128px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .contact-description {
   font: 1.2rem/22px 'Lato Regular';
@@ -438,7 +462,9 @@ button[type="submit"] {
   font: 1.2rem/21px 'Lato Regular';
   color: #E1E1E1;
 }
-.contacts i{
+.contacts .fa-map-marker-alt,
+.contacts .fa-phone,
+.contacts .fa-envelope {
   font-size: 1rem;
   margin-right: 10px;
   cursor: pointer;
@@ -447,7 +473,26 @@ button[type="submit"] {
 .contacts .fa-map-marker-alt{
   margin-left: 2px;
 }
+.contacts .fa-envelope{
+  margin-left: 1px;
+}
 .contacts a{
   color: #E1E1E1;
+}
+.contacts a:hover{
+  color: #B0D5FB;
+}
+.copyright {
+  background-color: #1C1C1C;
+  min-height: 42px;
+}
+.copyright .container {
+  max-width: 960px;
+  padding: 12px 10px 0;
+}
+.copyright p{
+  font: 1.2rem 'Maven Pro Regular';
+  color: #3E3E3E;
+  letter-spacing: -0.02em;
 }
 
