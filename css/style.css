@@ -113,6 +113,9 @@ nav a {
 nav a:hover {
   color: #00B598;
 }
+nav a:active {
+   color: #2B599C;
+}
 .arrow {
   width: 64px;
   height: 55px;
@@ -152,15 +155,22 @@ nav a:hover {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.hex-wrap {
+  position: relative;
+  margin: 0 10px;
+}
+.hex-wrap {
+  transition: transform 1s linear;
+}
+.hex-wrap:hover {
+  transform: rotate(360deg);
+  transition: transform 1s linear;
+}
 .hexagon{
   height: 210px;
   width: 180px;
   overflow: hidden;
   -webkit-transform: rotate(60deg);
-}
-.hex-wrap {
-  position: relative;
-  margin: 0 10px;
 }
 .hex-wrap:nth-child(9n+5) {
   margin-left: 0;
@@ -295,6 +305,11 @@ nav a:hover {
   background-image: url(../assets/img/user.png);
   background-position: 49% 59%;
 }
+.about .hex-wrap {
+}
+.about .hex-wrap:hover {
+  transform: rotate(0deg);
+}
 .about .hex-wrap:after {
   display: none;
 }
@@ -335,6 +350,9 @@ nav a:hover {
 }
 .sotials a:hover {
   color: #89DCD5;
+}
+.sotials li:active {
+   background-color: #2B599C;
 }
 .sotials a{
   font-size:1.3rem;  
@@ -441,6 +459,12 @@ button[type="submit"] {
   color: #E1E1E1;
   cursor: pointer;
 }
+button[type="submit"]:active {
+  background-color: #2B599C;
+}
+button[type="submit"]:hover {
+  background-color: #00A689;
+}
 .contact-wrap {
   max-width: 180px;
   margin-top: 128px;
@@ -481,6 +505,9 @@ button[type="submit"] {
 }
 .contacts a:hover{
   color: #B0D5FB;
+}
+.contacts a:active{
+  color: #2B599C;
 }
 .copyright {
   background-color: #1C1C1C;
