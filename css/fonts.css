@@ -15,6 +15,12 @@
     font-weight: 700;
 }
 @font-face { 
+    font-family: "Lato Black";
+    src: url("../assets/fonts/Lato-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face { 
     font-family: "Maven Pro Regular";
     src: url("../assets/fonts/MavenPro-Regular.ttf") format("truetype");
     font-style: normal;
