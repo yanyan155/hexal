@@ -171,6 +171,7 @@ nav a:active {
   width: 180px;
   overflow: hidden;
   -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
 }
 .hex-wrap:nth-child(9n+5) {
   margin-left: 0;
@@ -186,6 +187,7 @@ nav a:active {
   width: 180px;
   overflow: hidden;
   -webkit-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
 }
 .hex-layer2{
   position: relative;
@@ -197,6 +199,7 @@ nav a:active {
   filter: grayscale(0.15);
   -webkit-filter: grayscale(0.15);
   -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
 }
 .hex-wrap:nth-child(9n+1):after,
 .hex-wrap:nth-child(9n+4):after{
