@@ -328,6 +328,7 @@ nav a:active {
   text-align: justify;
   font-size: 1.2rem;
   line-height: 21px;
+  letter-spacing: -0.01rem;
   color: #fff;
 }
 .sotials {
@@ -484,7 +485,7 @@ button[type="submit"]:hover {
   margin-bottom: 32px;
   font: 1.2rem/22px 'Lato Regular';
   color: #E1E1E1;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.0em;
 }
 .contact-description span{
   font: 1.2rem/22px 'Lato Black';
